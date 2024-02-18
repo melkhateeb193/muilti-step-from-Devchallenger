@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    --primary-color-one: #652CD1;
+    --primary-color-two: #845EEE;
+    --primary-color-three: #121826;
+    --primary-color-four: #212936;
+    --primary-color-five: #394150;
+    --primary-color-six: #4D5562;
+    --primary-color-seven: #A1A1A9;
+    --primary-color-eight: #E5E7EB;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../dccl--javascript-multi-step-register/blur-radial.svg) , url(../dccl--javascript-multi-step-register/blur-radial.svg);
+    background-repeat: no-repeat;
+    background-position: left -12rem top -12rem , bottom -12rem right -12rem;
+    background-size: 40%;
+    background-color: var(--primary-color-three);
+    color: var(--primary-color-eight);
+}
+/*Main container*/
+main {
+    width: 30rem;
+
+    background-color: var(--primary-color-four);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color-six);
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+.transform{
+    transform: 0.5s ease-in-out;
+}
+/*Form container*/
+
+h1{
+    font-size: 1.25rem;
+}
+
+label{
+    font-size: 1rem;
+    color: var(--primary-color-seven);
+}
+.inputDivOne{
+    background-color: transparent;
+    border: 1.5px solid var(--primary-color-six);
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    color: var(--primary-color-eight);
+}
+.btnSubmitForm{
+    background-color: var(--primary-color-one);
+    border: none;
+    border-radius: 20px;
+    color: var(--primary-color-eight);
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    outline: none;
+}
+.btnSubmitForm:hover{
+    background-color: var(--primary-color-two);
+}
+/*Form container*/
+.option{
+    border: 1px solid var(--primary-color-six);
+    border-radius: 10px;
+    margin: 0.7rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color-five);
+    color: var(--primary-color-seven);
+    outline: none;
+    cursor: pointer;
+}
+.optionCheckbox{
+    display: none;
+}
+.optionCheckboxChange{
+    background-color: var(--primary-color-one) ;
+    color: #fff;
+}
+/*summary  container*/
+
+.summeryContainer p {
+    color: var(--primary-color-seven);
+}
+.summeryContainer p span {
+    color: var(--primary-color-eight);
+}
+/* footer*/
+footer p {
+    color: var(--primary-color-five);
+    font-size: 0.75rem;
+}
+
+.progress{
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--primary-color-five);
+    border-radius: 50%;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+.progressActive {
+    box-shadow: 0 0 20px var(--primary-color-two);
+    background-color: #652CD1;
+  }
+
+
+  #nameValidation ,#EmailValidation{
+    background-color: red;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+@keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px var(--primary-color-two);
+    }
+    50% {
+      box-shadow: 0 0 30px var(--primary-color-two);
+    }
+    100% {
+      box-shadow: 0 0 10px var(--primary-color-two);
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    body {
+        /* Adjust styles for smaller screens */
+        background-size: 60%;
+    }
+
+    main {
+        /* Adjust styles for smaller screens */
+        width: 90%;
+    }
+
+    /* Add more styles as needed */
+}
